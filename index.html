@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catatan workshop Building with AI, Managing Change with GitHub.">
+  <title>Workshop Git & GitHub | Reychika</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#home"> belajar<span>bareng.</span></a>
+      <div class="nav-links">
+        <a href="#materi">Materi</a>
+        <a href="#catatan">Catatan</a>
+        <a href="#poin-penting">Poin penting</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">CATATAN WORKSHOP · 07 NOVEMBER 2026</p>
+        <h1>Building with AI,<br><span>Managing Change with GitHub.</span></h1>
+        <p class="hero-description">Dokumentasi singkat materi workshop tentang penggunaan AI, pengelolaan perubahan kode, dan kolaborasi menggunakan GitHub.</p>
+        <a class="primary-button" href="#materi">Lihat materi <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="container intro section-space">
+      <div>
+        <p class="eyebrow">TENTANG REPOSITORY</p>
+        <h2>Belajar dan mencatat hal baru.</h2>
+      </div>
+      <div class="intro-card">
+        <p class="muted">Dibuat oleh</p>
+        <h3>Reychika Marsya Adisti</h3>
+        <p>Repository ini berisi catatan dan rangkuman workshop sebagai dokumentasi pembelajaran dasar dalam membuat aplikasi web dengan bantuan AI serta menggunakan Git dan GitHub untuk mengelola proyek.</p>
+      </div>
+    </section>
+
+    <section class="section-space section-tint" id="materi">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">APA YANG DIPELAJARI?</p>
+            <h2>Materi workshop</h2>
+          </div>
+          <p class="muted">Pilih topik untuk membaca ringkasannya.</p>
+        </div>
+        <div class="topic-grid">
+          <article class="topic-card">
+            <span class="topic-number">01</span>
+            <h3>Prompt Engineering</h3>
+            <p>Cara menyusun instruksi yang jelas agar AI memberikan hasil yang tepat dan sesuai kebutuhan.</p>
+            <button class="text-button" data-target="prompt-detail" aria-expanded="false">Baca ringkasan <span>→</span></button>
+            <div class="topic-detail" id="prompt-detail" hidden>Prompt adalah instruksi atau masukan yang diberikan kepada model AI. Prompt yang baik memiliki peran (role), tugas (task), konteks (context), dan format output (format). Konteks yang jelas membantu AI memahami kebutuhan pengguna.</div>
+          </article>
+          <article class="topic-card">
+            <span class="topic-number">02</span>
+            <h3>Pengenalan Git & GitHub</h3>
+            <p>Mengenal fungsi Git sebagai version control dan GitHub sebagai platform kolaborasi online.</p>
+            <button class="text-button" data-target="git-detail" aria-expanded="false">Baca ringkasan <span>→</span></button>
+            <div class="topic-detail" id="git-detail" hidden>Git mencatat perubahan pada file atau proyek. GitHub merupakan platform berbasis web untuk menyimpan repository Git secara online dan mendukung kolaborasi.</div>
+          </article>
+          <article class="topic-card">
+            <span class="topic-number">03</span>
+            <h3>Git Workflow</h3>
+            <p>Memahami alur perubahan file dari working directory ke staging area, lalu commit.</p>
+            <button class="text-button" data-target="workflow-detail" aria-expanded="false">Baca ringkasan <span>→</span></button>
+            <div class="topic-detail" id="workflow-detail" hidden>Working directory adalah tempat kita mengerjakan file. Staging area menampung perubahan yang akan dimasukkan ke commit. Git directory menyimpan database dan informasi yang dibutuhkan Git untuk mengelola proyek.</div>
+          </article>
+          <article class="topic-card">
+            <span class="topic-number">04</span>
+            <h3>Setup Git & VS Code</h3>
+            <p>Menyiapkan Git, identitas pengguna, dan Visual Studio Code sebelum mulai bekerja.</p>
+            <button class="text-button" data-target="setup-detail" aria-expanded="false">Baca ringkasan <span>→</span></button>
+            <div class="topic-detail" id="setup-detail" hidden>Setelah Git diinstal, periksa dengan <code>git --version</code>. Atur nama dan email menggunakan <code>git config --global user.name</code> serta <code>git config --global user.email</code>. VS Code juga dapat diperiksa melalui terminal dengan <code>code --version</code>.</div>
+          </article>
+          <article class="topic-card">
+            <span class="topic-number">05</span>
+            <h3>Repository & SSH Key</h3>
+            <p>Membuat atau menyalin repository dan mengenal autentikasi SSH ke GitHub.</p>
+            <button class="text-button" data-target="ssh-detail" aria-expanded="false">Baca ringkasan <span>→</span></button>
+            <div class="topic-detail" id="ssh-detail" hidden>Repository dapat dimulai dengan <code>git init</code> atau disalin dari GitHub menggunakan <code>git clone</code>. Materi juga memperkenalkan pembuatan SSH key dan penambahan public key ke pengaturan GitHub untuk autentikasi.</div>
+          </article>
+          <article class="topic-card">
+            <span class="topic-number">06</span>
+            <h3>Commit & Push</h3>
+            <p>Menyimpan perubahan dan mengirimkannya ke repository GitHub.</p>
+            <button class="text-button" data-target="push-detail" aria-expanded="false">Baca ringkasan <span>→</span></button>
+            <div class="topic-detail" id="push-detail" hidden>Perubahan dipilih dengan <code>git add</code>, disimpan sebagai riwayat menggunakan <code>git commit</code>, lalu dikirim ke repository online menggunakan <code>git push</code>. <code>git pull</code> mengambil perubahan dari remote dan menggabungkannya ke branch saat ini.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-space" id="catatan">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">RANGKUMAN</p>
+          <h2>Catatan materi</h2>
+        </div>
+      </div>
+      <div class="notes-layout">
+        <div class="notes-copy">
+          <h3>Perintah Git dasar</h3>
+          <p>Beberapa perintah yang dikenalkan selama workshop:</p>
+          <div class="command-list">
+            <div><code>git init</code><span>Memulai repository Git baru.</span></div>
+            <div><code>git add .</code><span>Menambahkan perubahan file ke staging area.</span></div>
+            <div><code>git commit -m "pesan"</code><span>Menyimpan perubahan ke riwayat repository.</span></div>
+            <div><code>git remote add origin URL</code><span>Menghubungkan repository lokal dengan repository remote.</span></div>
+            <div><code>git push origin main</code><span>Mengirim commit ke branch main di remote.</span></div>
+            <div><code>git pull origin main</code><span>Mengambil dan menggabungkan perubahan dari remote.</span></div>
+            <div><code>git clone URL</code><span>Menyalin repository dari sumber remote.</span></div>
+          </div>
+        </div>
+        <aside class="workflow-card">
+          <p class="eyebrow">ALUR SEDERHANA</p>
+          <h3>Dari file ke GitHub</h3>
+          <ol class="workflow-steps">
+            <li><span>1</span><div><strong>Working directory</strong><small>Mengubah atau membuat file.</small></div></li>
+            <li><span>2</span><div><strong>Staging area</strong><small>Memilih perubahan dengan git add.</small></div></li>
+            <li><span>3</span><div><strong>Commit</strong><small>Menyimpan catatan perubahan.</small></div></li>
+            <li><span>4</span><div><strong>GitHub</strong><small>Mengirim perubahan dengan git push.</small></div></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-tint section-space" id="poin-penting">
+      <div class="container takeaways">
+        <div>
+          <p class="eyebrow">HAL YANG SAYA PELAJARI</p>
+          <h2>Poin penting workshop</h2>
+          <p class="muted">Tandai poin yang sudah kamu pahami untuk memantau progres belajar.</p>
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Progres belajar</span><strong id="progress-text">0 dari 5</strong></div>
+            <div class="progress-track"><div class="progress-bar" id="progress-bar"></div></div>
+          </div>
+        </div>
+        <div class="checklist" id="learning-list">
+          <label><input type="checkbox"> Prompt yang spesifik dan memiliki konteks dapat membantu AI menghasilkan jawaban yang lebih sesuai.</label>
+          <label><input type="checkbox"> Git dan GitHub memiliki fungsi yang berbeda, tetapi saling melengkapi.</label>
+          <label><input type="checkbox"> Repository menyimpan proyek dan riwayat perubahan yang dikelola Git.</label>
+          <label><input type="checkbox"> Commit digunakan untuk menyimpan perubahan, sedangkan push mengirimkannya ke remote.</label>
+          <label><input type="checkbox"> GitHub dapat membantu proses kolaborasi dan pengelolaan proyek.</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="container closing section-space">
+      <p class="eyebrow">KESIMPULAN</p>
+      <h2>Belajar membuat, mengelola,<br>dan mengembangkan proyek.</h2>
+      <p>Workshop ini memberikan pemahaman dasar tentang cara memanfaatkan AI dalam proses pembuatan aplikasi serta menggunakan Git dan GitHub untuk mencatat perubahan dan mengelola proyek secara lebih teratur.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content"><span>© 2026 · Reychika Marsya Adisti</span><a href="#home">Kembali ke atas ↑</a></div>
+  </footer>
+</body>
+</html>
